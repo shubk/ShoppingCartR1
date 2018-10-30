@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bigranch.android.shoppingcart.Login">
+
+
+    <TextView
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="66dp"
+        android:text="User Name (Mobile Phone)"
+        android:textSize="20sp"
+        tools:text="User Name (Mobile Phone)" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="38dp"
+        android:text="Password"
+        android:textSize="20sp"
+        tools:text="Password :" />
+
+    <EditText
+        android:id="@+id/txtuser_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="221dp"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:textSize="20sp"
+        tools:text="Password" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="164dp"
+        android:onClick="onButtonClick"
+        android:text="Login"
+        android:textSize="20sp"
+        tools:text="Login" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="203dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="164dp"
+        android:onClick="onButtonClick"
+        android:text="Sign Up "
+        android:textSize="20sp" />
+
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/txtuser_name_mblphone"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtuser_pwd"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="111dp"
+        android:hint="Phone Number"
+        android:ems="10"
+        android:inputType="phone"
+        app:met_mask="(###)-###-####"
+        android:text="Mobile #"
+        tools:text="Mobile #" />
+    <!--android:inputType="textPersonName"-->
+
+</RelativeLayout>

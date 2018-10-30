@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ShoppingCart</string>
+    <string name="going_to_loginpage"> going to Login Page</string>
+    <string name="title_activity_sign_up">SignUp</string>>
+</resources>
